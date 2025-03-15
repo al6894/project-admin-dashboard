@@ -1,10 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow: hidden;
-}
-
-h1 {
-    color: white;
 }
 
 .container {
@@ -14,14 +16,17 @@ h1 {
     width: 100%;
 }
 
+h1 {
+    color: white;
+}
+
 .sidebar {
     display:flex;
     flex-direction: column;
     width: 18%;
     height: 100vh;
-    background: rgb(49, 162, 255);
     padding: 30px;
-    box-sizing: border-box;
+    background: rgb(49, 162, 255);
 }
 
 .sidebar .header {
@@ -225,18 +230,26 @@ h1 {
 }
 
 .card-content {
-    min-height: 100%;
-    max-height: 100%;
+    height: 100%;
     padding: 2%;
     border-radius: 15px;
     background-color: white;
+    border-left: 10px solid #FFC107;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.card-content p {
+    font-size: 1.2rem;
+    max-width: 550px;
 }
 
 .icons{
     display: flex;
-    flex-direction: row;
-    margin-left: 60%;
-    margin-top: 15%;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 .icons img {
